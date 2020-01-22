@@ -5,11 +5,19 @@ class Header extends Component {
 	renderContent() {
 		switch (this.props.auth) {
 			case null:
-				return 'Still deciding';
+				return;
 			case false:
-				return "I'm logged out";
+				return (
+					<li>
+						<a href="/auth/google">Login with Google</a>
+					</li>
+				);
 			default:
-				return "I'm logged in";
+				return (
+					<li>
+						<a>Logout</a>
+					</li>
+				);
 		}
 	}
 
@@ -25,8 +33,8 @@ class Header extends Component {
 	}
 }
 
-function mapStatetoProps({ auth }) {
+const mapStateToProps = ({ auth }) => {
 	return { auth };
-}
+};
 
-export default connect(mapStatetoProps)(Header);
+export default connect(mapStateToProps)(Header);
