@@ -15,21 +15,23 @@ class Header extends Component {
 					</li>
 				);
 			default:
-				return [
-					<li>
-						<Payments />
-					</li>,
-					<li>
-						<a href="api/logout">Logout</a>
-					</li>
-				];
+				return (
+					<React.Fragment>
+						<li>
+							<Payments />
+						</li>
+						<li>
+							<a href="api/logout">Logout</a>
+						</li>
+					</React.Fragment>
+				);
 		}
 	}
 
 	render() {
 		return (
 			<nav>
-				<div className="nav-wrapper">
+				<div className="nav-wrapper" style={navStyle}>
 					<Link to={this.props.auth ? '/survers' : '/'} className="left brand-logo">
 						Email Express
 					</Link>
@@ -39,6 +41,10 @@ class Header extends Component {
 		);
 	}
 }
+
+const navStyle = {
+	backgroundColor: 'purple'
+};
 
 const mapStateToProps = ({ auth }) => {
 	return { auth };
