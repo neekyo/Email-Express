@@ -43,7 +43,7 @@ class Header extends Component {
 }
 
 const navStyle = {
-	backgroundColor: 'purple'
+	backgroundColor: 'gray'
 };
 
 const mapStateToProps = ({ auth }) => {
