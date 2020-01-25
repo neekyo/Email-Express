@@ -20,6 +20,8 @@
 		"concurrently": "^5.0.2",
 		"cookie-session": "^1.4.0",
 		"express": "^4.17.1",
+		"jquery": "^3.4.1",
+		"jsdom": "^16.0.1",
 		"mongoose": "^5.8.9",
 		"nodemon": "^2.0.2",
 		"passport": "^0.4.1",
