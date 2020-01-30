@@ -20,9 +20,11 @@ class Header extends Component {
 						<li>
 							<Payments />
 						</li>
-						<li style={{ margin: '0 10px' }}>Credits: {this.props.auth.credits}</li>
+						<li style={styles.credits}>Credits: {this.props.auth.credits}</li>
 						<li>
-							<a href="api/logout">Logout</a>
+							<a href="api/logout" style={styles.logout}>
+								Logout
+							</a>
 						</li>
 					</React.Fragment>
 				);
@@ -32,8 +34,8 @@ class Header extends Component {
 	render() {
 		return (
 			<nav>
-				<div className="nav-wrapper">
-					<Link to={this.props.auth ? '/survers' : '/'} className="left brand-logo">
+				<div className="nav-wrapper" style={styles.header}>
+					<Link to={this.props.auth ? '/survers' : '/'} className="left brand-logo" style={styles.logo}>
 						Email Express
 					</Link>
 					<ul className="right">{this.renderContent()}</ul>
@@ -45,6 +47,26 @@ class Header extends Component {
 
 const mapStateToProps = ({ auth }) => {
 	return { auth };
+};
+
+let styles = {
+	header: {
+		backgroundColor: 'white',
+		borderBottom: '.2rem solid #9F7BC1'
+	},
+	logo: {
+		color: '#9F7BC1',
+		fontWeight: 'bold',
+		fontSize: '1.5rem',
+		margin: '0 0 0 .7rem'
+	},
+	credits: {
+		margin: '0 10px',
+		color: '#9F7BC1'
+	},
+	logout: {
+		color: '#9F7BC1'
+	}
 };
 
 export default connect(mapStateToProps)(Header);

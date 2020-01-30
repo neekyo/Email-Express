@@ -22,7 +22,7 @@ class Payments extends Component {
 }
 
 const btn = {
-	backgroundColor: 'purple'
+	backgroundColor: '#9F7BC1'
 };
 
 export default connect(null, actions)(Payments);
