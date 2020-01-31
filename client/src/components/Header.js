@@ -22,9 +22,9 @@ class Header extends Component {
 						</li>
 						<li style={styles.credits}>Credits: {this.props.auth.credits}</li>
 						<li>
-							<a href="api/logout" style={styles.logout}>
+							<Link to="api/logout" style={styles.logout}>
 								Logout
-							</a>
+							</Link>
 						</li>
 					</React.Fragment>
 				);
@@ -35,7 +35,7 @@ class Header extends Component {
 		return (
 			<nav>
 				<div className="nav-wrapper" style={styles.header}>
-					<Link to={this.props.auth ? '/survers' : '/'} className="left brand-logo" style={styles.logo}>
+					<Link to={this.props.auth ? '/surveys' : '/'} className="left brand-logo" style={styles.logo}>
 						Email Express
 					</Link>
 					<ul className="right">{this.renderContent()}</ul>
@@ -58,14 +58,16 @@ let styles = {
 		color: '#9F7BC1',
 		fontWeight: 'bold',
 		fontSize: '1.5rem',
-		margin: '0 0 0 .7rem'
+		margin: '0 0 0 .7rem',
+		textDecoration: 'none'
 	},
 	credits: {
 		margin: '0 10px',
 		color: '#9F7BC1'
 	},
 	logout: {
-		color: '#9F7BC1'
+		color: '#9F7BC1',
+		textDecoration: 'none'
 	}
 };
 
