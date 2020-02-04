@@ -49,7 +49,7 @@ const mapStateToProps = ({ auth }) => {
 	return { auth };
 };
 
-let styles = {
+const styles = {
 	header: {
 		backgroundColor: 'white',
 		borderBottom: '.2rem solid #9F7BC1'

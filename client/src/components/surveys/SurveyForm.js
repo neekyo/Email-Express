@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import { Link } from 'react-router-dom';
 import SurveyField from './SurveyField';
+import validateEmails from '../../utils/validateEmails';
 
 const FIELDS = [
 	{ label: 'Survey Title', name: 'title' },
@@ -36,9 +37,23 @@ class SurveyForm extends Component {
 	}
 }
 
-let styles = {
+function validate(values) {
+	const errors = {};
+
+	errors.emails = validateEmails(values.emails || '');
+
+	_.each(FIELDS, ({ name }) => {
+		if (!values[name]) {
+			errors[name] = 'You must provide an input';
+		}
+	});
+
+	return errors;
+}
+
+const styles = {
 	submit: {
-		backgroundColor: '#9F7BC1'
+		backgroundColor: 'green'
 	},
 	cancel: {
 		textDecoration: 'none'
@@ -46,5 +61,6 @@ let styles = {
 };
 
 export default reduxForm({
+	validate,
 	form: 'surveyForm'
 })(SurveyForm);

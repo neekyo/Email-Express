@@ -14,7 +14,7 @@ const Dashboard = () => {
 	);
 };
 
-let styles = {
+const styles = {
 	add: {
 		backgroundColor: '#9F7BC1'
 	}
