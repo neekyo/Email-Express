@@ -10,15 +10,15 @@ class SurveyList extends Component {
 	renderSurveys() {
 		return this.props.surveys.reverse().map((survey) => {
 			return (
-				<div className="card blue-grey darken-1" key={survey._id}>
-					<div className="card-content white-text">
+				<div className="card darken-1" key={survey._id}>
+					<div className="card-content white-text" style={styles.card}>
 						<span className="card-title">{survey.title}</span>
 						<p>{survey.body}</p>
 						<p className="right">Sent on: {new Date(survey.dateSent).toLocaleDateString()}</p>
 					</div>
 					<div className="card-action">
-						<a>Yes: {survey.yes}</a>
-						<a>No: {survey.no}</a>
+						<a style={styles.action}>Yes: {survey.yes}</a>
+						<a style={styles.action}>No: {survey.no}</a>
 					</div>
 				</div>
 			);
@@ -29,6 +29,16 @@ class SurveyList extends Component {
 		return <div>{this.renderSurveys()}</div>;
 	}
 }
+
+let styles = {
+	card: {
+		backgroundColor: '#9F7BC1'
+	},
+	action: {
+		color: '#9F7BC1',
+		fontWeight: 'bold'
+	}
+};
 
 function mapStateToProps({ surveys }) {
 	return { surveys };

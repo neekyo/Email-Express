@@ -8,12 +8,12 @@ class Payments extends Component {
 		return (
 			<StripeCheckout
 				name="Email Express"
-				description="$5 for 5 email credits"
+				description="$5 = 5 Credits"
 				amount={500}
 				token={(token) => this.props.handleToken(token)}
 				stripeKey={process.env.REACT_APP_STRIPE_KEY}
 			>
-				<button className="btn" style={btn}>
+				<button className="btn" style={styles.btn}>
 					Add Credits
 				</button>
 			</StripeCheckout>
@@ -21,8 +21,10 @@ class Payments extends Component {
 	}
 }
 
-const btn = {
-	backgroundColor: '#9F7BC1'
+const styles = {
+	btn: {
+		backgroundColor: '#9F7BC1'
+	}
 };
 
 export default connect(null, actions)(Payments);

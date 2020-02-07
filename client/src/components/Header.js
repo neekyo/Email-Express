@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Payments from './Payments';
+import Logo from '../assets/logo.png';
 
 class Header extends Component {
 	renderContent() {
@@ -35,8 +36,8 @@ class Header extends Component {
 		return (
 			<nav>
 				<div className="nav-wrapper" style={styles.header}>
-					<Link to={this.props.auth ? '/surveys' : '/'} className="left brand-logo" style={styles.logo}>
-						Email Express
+					<Link to={this.props.auth ? '/surveys' : '/'} className="left brand-logo" style={styles.brand}>
+						<img src={Logo} width="55px" height="25px" style={styles.logo} /> Email Express
 					</Link>
 					<ul className="right">{this.renderContent()}</ul>
 				</div>
@@ -55,6 +56,9 @@ const styles = {
 		borderBottom: '.2rem solid #9F7BC1'
 	},
 	logo: {
+		marginBottom: '2.5px'
+	},
+	brand: {
 		color: '#9F7BC1',
 		fontWeight: 'bold',
 		fontSize: '1.5rem',
