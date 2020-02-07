@@ -19,15 +19,25 @@ const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
 		<div>
 			<h5>Please confirm your entries</h5>
 			{reviewFields}
-			<button className="red white-text btn-flat white-text" onClick={onCancel}>
+			<button className="red white-text btn-flat white-text" onClick={onCancel} style={styles.confirm}>
 				Back
 			</button>
-			<button onClick={() => submitSurvey(formValues, history)} className="green btn-flat right white-text">
+			<button
+				onClick={() => submitSurvey(formValues, history)}
+				className="green btn-flat right white-text"
+				style={styles.confirm}
+			>
 				Send Survey
 				<i className="material-icons right">email</i>
 			</button>
 		</div>
 	);
+};
+
+const styles = {
+	confirm: {
+		marginTop: '1rem'
+	}
 };
 
 function mapStateToProps(state) {

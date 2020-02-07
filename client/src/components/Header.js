@@ -11,8 +11,10 @@ class Header extends Component {
 				return;
 			case false:
 				return (
-					<li>
-						<a href="/auth/google">Login with Google</a>
+					<li style={styles.google}>
+						<a style={styles.google} href="/auth/google">
+							Login with Google
+						</a>
 					</li>
 				);
 			default:
@@ -71,6 +73,10 @@ const styles = {
 	},
 	logout: {
 		color: '#9F7BC1',
+		textDecoration: 'none'
+	},
+	google: {
+		backgroundColor: '#9F7BC1',
 		textDecoration: 'none'
 	}
 };

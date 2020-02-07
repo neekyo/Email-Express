@@ -14,7 +14,7 @@ export default ({ input, label, meta: { error, touched } }) => {
 
 const styles = {
 	input: {
-		borderBottom: '.1rem solid #9F7BC1',
+		borderBottom: '.75px solid #9F7BC1',
 		marginBottom: '5px'
 	},
 	form: {
