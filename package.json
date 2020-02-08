@@ -36,6 +36,7 @@
 		"redux-form": "^8.1.0",
 		"sendgrid": "^5.2.3",
 		"stripe": "^8.7.0",
+		"typeface-ubuntu": "0.0.65",
 		"webfontloader": "^1.6.28"
 	}
 }

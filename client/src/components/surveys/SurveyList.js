@@ -30,7 +30,7 @@ class SurveyList extends Component {
 	}
 }
 
-let styles = {
+const styles = {
 	card: {
 		backgroundColor: '#9F7BC1'
 	},

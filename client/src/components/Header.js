@@ -11,8 +11,8 @@ class Header extends Component {
 				return;
 			case false:
 				return (
-					<li style={styles.google}>
-						<a style={styles.google} href="/auth/google">
+					<li>
+						<a style={styles.google} className="btn" href="/auth/google">
 							Login with Google
 						</a>
 					</li>
@@ -21,9 +21,20 @@ class Header extends Component {
 				return (
 					<React.Fragment>
 						<li>
+							<Link to="/" style={styles.logout}>
+								Home
+							</Link>
+						</li>
+						<li>
+							<Link to="/surveys" style={styles.logout}>
+								Surveys
+							</Link>
+						</li>
+						<li>
 							<Payments />
 						</li>
 						<li style={styles.credits}>Credits: {this.props.auth.credits}</li>
+
 						<li>
 							<Link to="api/logout" style={styles.logout}>
 								Logout
@@ -38,8 +49,13 @@ class Header extends Component {
 		return (
 			<nav>
 				<div className="nav-wrapper" style={styles.header}>
-					<Link to={this.props.auth ? '/surveys' : '/'} className="left brand-logo" style={styles.brand}>
-						<img src={Logo} width="55px" height="25px" style={styles.logo} /> Email Express
+					<Link
+						to={this.props.auth ? '/surveys' : '/'}
+						className="left brand-logo brand"
+						style={styles.brand}
+					>
+						<img src={Logo} width="55px" height="25px" style={styles.logo} alt="Email Express" />
+						Email Express
 					</Link>
 					<ul className="right">{this.renderContent()}</ul>
 				</div>
@@ -58,11 +74,11 @@ const styles = {
 		borderBottom: '.2rem solid #9F7BC1'
 	},
 	logo: {
-		marginBottom: '2.5px'
+		marginBottom: '2.6px'
 	},
 	brand: {
 		color: '#9F7BC1',
-		fontWeight: 'bold',
+		fontWeight: '550',
 		fontSize: '1.5rem',
 		margin: '0 0 0 .7rem',
 		textDecoration: 'none'
