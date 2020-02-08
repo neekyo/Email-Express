@@ -74,7 +74,8 @@ const styles = {
 		borderBottom: '.2rem solid #9F7BC1'
 	},
 	logo: {
-		marginBottom: '2.6px'
+		marginBottom: '2.6px',
+		marginRight: '3px'
 	},
 	brand: {
 		color: '#9F7BC1',

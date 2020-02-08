@@ -4,7 +4,7 @@ const Landing = () => {
 	return (
 		<div style={styles.title}>
 			<h2>Email Express</h2>
-			Collect feedback from your users
+			<h6>Collect feedback from your users</h6>
 		</div>
 	);
 };
