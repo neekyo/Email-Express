@@ -1,7 +1,5 @@
-<div align=center>
-    <h1 align=center>
-        Email Express
-        <br>
-        <img align=center height="100%" width="100%" src="https://github.com/neekyo/Email-Express/blob/master/client/src/assets/emailDemo.gif">
-    </h1>
+##### A MERN app that allows users to purchase credits to send out surveys to recipients in order to better understand feedback for their service
+![preview1](https://github.com/neekyo/Email-Express/blob/master/client/src/assets/preview1.png)
+---
+![preview2](https://github.com/neekyo/Email-Express/blob/master/client/src/assets/preview2.png)
 </div>
