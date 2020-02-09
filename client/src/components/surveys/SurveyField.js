@@ -18,7 +18,7 @@ const styles = {
 		marginBottom: '5px'
 	},
 	form: {
-		marginTop: '1rem'
+		marginTop: '2.3rem'
 	},
 	label: {
 		color: '#9F7BC1',

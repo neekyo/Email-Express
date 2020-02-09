@@ -34,11 +34,10 @@ class Header extends Component {
 							<Payments />
 						</li>
 						<li style={styles.credits}>Credits: {this.props.auth.credits}</li>
-
 						<li>
-							<Link to="api/logout" style={styles.logout}>
+							<a href="/api/logout" style={styles.logout}>
 								Logout
-							</Link>
+							</a>
 						</li>
 					</React.Fragment>
 				);
@@ -55,7 +54,7 @@ class Header extends Component {
 						style={styles.brand}
 					>
 						<img src={Logo} width="55px" height="25px" style={styles.logo} alt="Email Express" />
-						Email Express
+						EMAIL EXPRESS
 					</Link>
 					<ul className="right">{this.renderContent()}</ul>
 				</div>
@@ -80,7 +79,7 @@ const styles = {
 	brand: {
 		color: '#9F7BC1',
 		fontWeight: '550',
-		fontSize: '1.5rem',
+		fontSize: '1.3rem',
 		margin: '0 0 0 .7rem',
 		textDecoration: 'none'
 	},

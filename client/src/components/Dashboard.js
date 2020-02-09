@@ -17,7 +17,7 @@ const Dashboard = () => {
 
 const styles = {
 	add: {
-		backgroundColor: '#9F7BC1'
+		backgroundColor: 'green'
 	}
 };
 
