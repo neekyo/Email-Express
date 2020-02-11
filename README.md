@@ -1,5 +1,15 @@
-##### A MERN app that allows users to purchase credits to send out surveys to recipients in order to better understand feedback for their service
-![preview1](https://github.com/neekyo/Email-Express/blob/master/client/src/assets/preview1.png)
----
-![preview2](https://github.com/neekyo/Email-Express/blob/master/client/src/assets/preview2.png)
+<div align=center>
+    <h1 align=center>
+        Email Express
+        <br>
+        <img align=center src="https://github.com/neekyo/Email-Express/blob/master/client/src/assets/preview1.png">
+        <br>
+        <img align=center src="https://github.com/neekyo/Email-Express/blob/master/client/src/assets/preview2.png">
+        <br>
+        <img align=center src="https://github.com/neekyo/Email-Express/blob/master/client/src/assets/preview3.png">
+        <br>
+        <img align=center src="https://github.com/neekyo/Email-Express/blob/master/client/src/assets/preview4.png">
+        <br>
+        <img align=center src="https://github.com/neekyo/Email-Express/blob/master/client/src/assets/preview5.png">
+    </h1>
 </div>
