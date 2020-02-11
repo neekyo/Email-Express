@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
-.title {
-	font-family: 'Fjalla One', sans-serif;
-}
-
-.brand {
-	font-family: 'Fjalla One', sans-serif;
-	font-size: 19px !important;
-}
-
 body {
 	font-family: 'Noto Sans', sans-serif;
 }
@@ -17,6 +8,15 @@ body {
 h1 {
 	margin-top: 0px;
 	padding-top: 3rem;
+}
+
+.title {
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.brand {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 19px !important;
 }
 
 .landing {

@@ -15,8 +15,8 @@ const Landing = () => {
 							RECEIEVE VALUABLE FEEDBACK
 						</h5>
 					</div>
+					<p style={styles.copyright}>Copyright &copy; 2020 by Email Express </p>
 				</div>
-				<p style={styles.copyright}>Copyright &copy; 2020 by Email Express </p>
 			</div>
 		</React.Fragment>
 	);
