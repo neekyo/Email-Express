@@ -13,3 +13,8 @@
         <img align=center src="https://github.com/neekyo/Email-Express/blob/master/client/src/assets/preview5.png">
     </h1>
 </div>
+
+## View Here @ [Heroku](https://emailexpress.herokuapp.com/)
+
+## Built With
+JS, HTML5, CSS3, Node, React, Redux, Express, Mongoose, MongoDB, Heroku
