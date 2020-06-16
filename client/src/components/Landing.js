@@ -3,7 +3,7 @@ import React from 'react';
 const Landing = () => {
 	return (
 		<React.Fragment>
-			<div className="landing">
+			<div id="landing">
 				<div style={styles.title} className="title">
 					<h1>EMAIL EXPRESS</h1>
 					<div className="desc">
@@ -30,7 +30,8 @@ const styles = {
 	copyright: {
 		position: 'absolute',
 		bottom: 0,
-		fontSize: '12px'
+		fontSize: '12px',
+		paddingLeft: '.5rem'
 	}
 };
 

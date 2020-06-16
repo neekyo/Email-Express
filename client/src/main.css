@@ -3,6 +3,11 @@
 
 body {
 	font-family: 'Noto Sans', sans-serif;
+	background: url("../src/assets/background2.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 h1 {
@@ -10,21 +15,17 @@ h1 {
 	padding-top: 3rem;
 }
 
-.title {
-	font-family: 'Fjalla One', sans-serif;
-}
-
 .brand {
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 19px !important;
 }
 
-.landing {
-	background: url("../src/assets/background2.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 100vh;
-	width: 100vw;
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+.title {
+	font-family: 'Fjalla One', sans-serif;
+	padding-top: 15rem;
 }
