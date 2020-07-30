@@ -11,11 +11,12 @@ class Header extends Component {
 				return;
 			case false:
 				return (
-					<li>
-						<a style={styles.google} className="btn" href="/auth/google">
-							Login with Google
-						</a>
-					</li>
+					<a href="auth/google" className="ui green google button">
+						<div className="sign">
+							<i className="google icon" />
+							Sign in with Google
+						</div>
+					</a>
 				);
 			default:
 				return (
@@ -34,11 +35,12 @@ class Header extends Component {
 							<Payments />
 						</li>
 						<li style={styles.credits}>Credits: {this.props.auth.credits}</li>
-						<li>
-							<a href="/api/logout" style={styles.logout}>
-								Logout
-							</a>
-						</li>
+						<a href="api/logout" className="ui red google button">
+							<div className="sign">
+								<i className="google icon" />
+								Sign Out
+							</div>
+						</a>
 					</React.Fragment>
 				);
 		}
@@ -86,14 +88,6 @@ const styles = {
 	credits: {
 		margin: '0 10px',
 		color: '#9F7BC1'
-	},
-	logout: {
-		color: '#9F7BC1',
-		textDecoration: 'none'
-	},
-	google: {
-		backgroundColor: '#9F7BC1',
-		textDecoration: 'none'
 	}
 };
 

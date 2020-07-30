@@ -14,8 +14,14 @@ const Landing = () => {
 							<br />
 							RECEIEVE VALUABLE FEEDBACK
 						</h5>
+						<h6>
+							<br />
+							<b>Sign in</b> and get started!
+						</h6>
 					</div>
-					<p style={styles.copyright}>Copyright &copy; 2020 by Email Express </p>
+					<p style={styles.copyright}>
+						Copyright &copy; 2020 by <b>Email Express</b>
+					</p>
 				</div>
 			</div>
 		</React.Fragment>

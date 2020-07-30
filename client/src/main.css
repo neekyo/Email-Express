@@ -26,6 +26,15 @@ h1 {
 }
 
 .title {
-	font-family: 'Fjalla One', sans-serif;
+	font-family: 'Fja	lla One', sans-serif;
 	padding-top: 15rem;
+}
+
+.ui.button {
+	padding: 0 .5rem 0 .5rem;
+	margin: .5rem;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
